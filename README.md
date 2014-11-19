@@ -27,3 +27,12 @@ The following excercises will be done during the training session.
 3. **Stash** your local changes so that you can get theirs...
 4. Pull down their urgent change
 5. ...and **apply** your stash to restore your work
+
+## Excerise #4 - Conflicting Stories
+
+1. Make another update to your `README.md` and commit it
+2. Meanwhile, someone else should make an update to your `README.md`, commit and push it
+3. Attempt to push your commits, and watch Git complain that "Updates were rejected because the remote contains work that you do not have locally"
+4. Attempt to pull their changes into your `master` branch, and watch Git notify you of a **conflict**
+5. Fix the conflict
+6. Push your change
