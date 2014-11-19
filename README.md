@@ -36,3 +36,10 @@ The following excercises will be done during the training session.
 4. Attempt to pull their changes into your `master` branch, and watch Git notify you of a **conflict**
 5. Fix the conflict
 6. Push your change
+
+## Bonus Excercise - Github, Forks and Pull Requests
+
+1. **Fork** this repository using the Github UI, creating a separate remote using your Github account
+2. Add a new remote to your local repository using Tower
+2. Commit and push a change to your fork
+3. Submit a **pull request** back to the original repository
