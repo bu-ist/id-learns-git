@@ -13,3 +13,9 @@ The following excercises will be done during the training session.
 3. **Add** a `README.md` file to your directory
 4. **Stage** your changes for commit
 5. **Commit** with a thoughtful message
+
+## Excercise #2 - Sharing is Caring
+
+1. **Push** your commit to the remote **origin** (Github)
+2. Wait for someone else to do the same, and **fetch** their changes in to your local repository
+3. Take a look at their changes, and then **pull** them into your **master** branch
