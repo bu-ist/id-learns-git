@@ -2,3 +2,5 @@
 
 # MOAR SPARKLES
 Y U NO SPARKLES??
+* Making a list
+* Checking it twice
