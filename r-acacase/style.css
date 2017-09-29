@@ -2451,7 +2451,7 @@ select[multiple] {
 /* buttons
 ----------------------------------------------------------------- */
 body {
-  background: #000000;
+  background: #ffffff;
 }
 
 .content {
@@ -5035,6 +5035,58 @@ h6.bu_collapsible {
   .gallery-columns-9 .gallery-item:nth-child(10) {
     clear: left;
   }
+}
+
+.card {
+  background: #eee;
+  margin: 20px 0;
+}
+.card .content {
+  padding: 15px 15px 5px 15px;
+  background: #eee;
+}
+
+@media only screen and (max-width: 768px) {
+  .card .content h2, .card .content h3 {
+    font-size: 21px;
+  }
+}
+.full-width-cta {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  padding: 70px;
+  text-align: center;
+}
+
+.full-width-cta::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url("images/landscape.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.full-width-cta h2,
+.full-width-cta .button-primary {
+  position: relative;
+  z-index: 2;
+}
+
+.full-width-cta h2 {
+  color: #fff;
+}
+
+.full-width-content {
+  margin: 0 auto;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
