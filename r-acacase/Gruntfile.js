@@ -70,8 +70,12 @@ module.exports = function(grunt) {
 		sass: {
 			devl: {
 				options: {
-					style: 'expanded',
-					loadPath: 'bower_components/responsive-foundation/css-dev',
+					outputStyle: 'expanded',
+					sourceMap: true,
+					indentType: 'space',
+					indentWidth: 2,
+					precision: '5',
+					includePaths: [ 'bower_components/responsive-foundation/css-dev' ],
 					bundleExec: true
 				},
 				files: {
@@ -81,8 +85,12 @@ module.exports = function(grunt) {
 			},
 			prod: {
 				options: {
-					style: 'compressed',
-					loadPath: 'bower_components/responsive-foundation/css-dev',
+					outputStyle: 'compressed',
+					sourceMap: true,
+					indentType: 'space',
+					indentWidth: 2,
+					precision: '5',
+					includePaths: [ 'bower_components/responsive-foundation/css-dev' ],
 					bundleExec: true
 				},
 				files: {
