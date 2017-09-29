@@ -70,8 +70,12 @@ module.exports = function(grunt) {
 		sass: {
 			devl: {
 				options: {
-					style: 'expanded',
-					loadPath: 'bower_components/responsive-foundation/css-dev',
+					outputStyle: 'expanded',
+					sourceMap: true,
+					indentType: 'space',
+					indentWidth: 2,
+					precision: '5',
+					includePaths: [ 'bower_components/responsive-foundation/css-dev' ],
 					bundleExec: true
 				},
 				files: {
@@ -81,8 +85,12 @@ module.exports = function(grunt) {
 			},
 			prod: {
 				options: {
-					style: 'compressed',
-					loadPath: 'bower_components/responsive-foundation/css-dev',
+					outputStyle: 'compressed',
+					sourceMap: true,
+					indentType: 'space',
+					indentWidth: 2,
+					precision: '5',
+					includePaths: [ 'bower_components/responsive-foundation/css-dev' ],
 					bundleExec: true
 				},
 				files: {
@@ -138,7 +146,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
-	grunt.loadNpmTasks( 'grunt-contrib-sass' );
+	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
 	grunt.loadNpmTasks( 'grunt-phplint' );
