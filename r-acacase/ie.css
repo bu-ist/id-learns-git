@@ -9,9 +9,9 @@ Template: responsive-framework
 */
 /* mixins
 ----------------------------------------------------------------- */
-.container:after, .content-container:after, .footbar-container:after, .sidebarLocation-left .sidebarPosts:after,
-.sidebarLocation-right .sidebarPosts:after, .sidebarLocation-left .sidebarProfiles:after,
-.sidebarLocation-right .sidebarProfiles:after, .row:after, .masthead:after, .footbar:after, .siteFooter:after, .primaryNav:after, .widget-bu-posts .post:after, .sidebarPosts:after,
+.container:after, .content-container:after, .footbar-container:after, .sidebarLocation-left .sidebarPosts:after, .sidebarLocation-right .sidebarPosts:after, .sidebarLocation-left
+.sidebarProfiles:after, .sidebarLocation-right
+.sidebarProfiles:after, .row:after, .masthead:after, .footbar:after, .siteFooter:after, .primaryNav:after, .widget-bu-posts .post:after, .sidebarPosts:after,
 .sidebarProfiles:after, .paging-navigation:after, .profile-listing:after, .profile-listing .advanced:after, .profile-listing .mini:after, .gallery:after {
   /* These classes are using %clearfix. */
   display: table;
@@ -34,7 +34,6 @@ Template: responsive-framework
   font-style: normal;
   font-weight: 400;
 }
-
 @font-face {
   font-family: "Benton";
   src: url("https://www.bu.edu/cdn/fonts/Benton-Sans-Regular-Italic/3295fa07-2a3f-4cd1-ba86-e06161453a51-2.eot");
@@ -42,7 +41,6 @@ Template: responsive-framework
   font-style: italic;
   font-weight: 400;
 }
-
 @font-face {
   font-family: "Benton";
   src: url("https://www.bu.edu/cdn/fonts/Benton-Sans-Bold/d4a4a960-2cf2-430e-8b13-cbf6f261ddb9-2.eot");
@@ -50,7 +48,6 @@ Template: responsive-framework
   font-style: normal;
   font-weight: 700;
 }
-
 @font-face {
   font-family: "Benton";
   src: url("https://www.bu.edu/cdn/fonts/Benton-Sans-Bold-Italic/f037bfb1-69d7-4441-8d43-3b8c2c6e77d3-2.eot");
@@ -58,7 +55,6 @@ Template: responsive-framework
   font-style: italic;
   font-weight: 700;
 }
-
 /* Tiempos Text */
 @font-face {
   font-family: "TiemposText";
@@ -67,7 +63,6 @@ Template: responsive-framework
   font-style: normal;
   font-weight: 400;
 }
-
 @font-face {
   font-family: "TiemposText";
   src: url("https://www.bu.edu/cdn/fonts/TiemposText/TiemposText-Regular-Italic.eot");
@@ -75,7 +70,6 @@ Template: responsive-framework
   font-style: italic;
   font-weight: 400;
 }
-
 @font-face {
   font-family: "TiemposText";
   src: url("https://www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold.eot");
@@ -83,7 +77,6 @@ Template: responsive-framework
   font-style: normal;
   font-weight: 700;
 }
-
 @font-face {
   font-family: "TiemposText";
   src: url("https://www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold-Italic.eot");
@@ -91,7 +84,6 @@ Template: responsive-framework
   font-style: italic;
   font-weight: 700;
 }
-
 /* placeholders for theme use
 ----------------------------------------------------------------- */
 .wrapper {
@@ -99,9 +91,9 @@ Template: responsive-framework
   overflow: hidden;
 }
 
-.container, .content-container, .footbar-container, .sidebarLocation-left .sidebarPosts,
-.sidebarLocation-right .sidebarPosts, .sidebarLocation-left .sidebarProfiles,
-.sidebarLocation-right .sidebarProfiles {
+.container, .content-container, .footbar-container, .sidebarLocation-left .sidebarPosts, .sidebarLocation-right .sidebarPosts, .sidebarLocation-left
+.sidebarProfiles, .sidebarLocation-right
+.sidebarProfiles {
   /* These classes are using %container-styles. */
   width: 100%;
   padding: 35px 20px 0;
@@ -137,19 +129,38 @@ Template: responsive-framework
   float: left;
 }
 
-.col-1, .col-2, .col-quarter, .col-3, .col-third, .col-4, .col-5, .col-half, .col-6, .col-7, .col-two-third, .col-8, .col-three-quarter, .col-9, .col-10, .col-11, .col-full, .col-12, .col-xs-1, .col-xs-2, .col-xs-quarter, .col-xs-3, .col-xs-third, .col-xs-4, .col-xs-5, .col-xs-half, .col-xs-6, .col-xs-7, .col-xs-two-third, .col-xs-8, .col-xs-three-quarter, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-full, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-quarter, .siteFooter-links,
-.siteFooter-social, .has-info-links .siteFooter-links, .has-info-social .siteFooter-social, .has-info-links-social .siteFooter-links,
-.has-info-links-social .siteFooter-social, .col-sm-3, .col-sm-third, .col-sm-4, .col-sm-5, .col-sm-half, .siteFooter-info, .has-links-social .siteFooter-links,
-.has-links-social .siteFooter-social, .has-info-links-social .siteFooter-info, .col-sm-6, .col-sm-7, .col-sm-two-third, .col-sm-8, .col-sm-three-quarter, .has-info-links .siteFooter-info, .has-info-social .siteFooter-info, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-full, .has-info .siteFooter-info, .has-links .siteFooter-links, .has-social .siteFooter-social, .col-sm-12, .col-md-1, .col-md-2, .col-md-quarter, .col-md-3, .col-md-third, .profile-listing .advanced li, .col-md-4, .sidebar, .sidebarLocation-left .sidebarPosts,
-.sidebarLocation-right .sidebarPosts, .sidebarLocation-left .sidebarProfiles,
-.sidebarLocation-right .sidebarProfiles, .col-md-5, .col-md-half, .col-md-6, .profile-listing .mini li, .col-md-7, .col-md-two-third, .col-md-8, article[role=main],
-.content-area, .col-md-three-quarter, .col-md-9, .col-md-10, .col-md-11, .col-md-full, .sidebarLocation-bottom article[role=main], .single-calendar article[role=main], .home.blog article[role=main],
+.col-1, .col-2, .col-quarter, .col-3, .col-third, .col-4, .col-5, .col-half, .col-6, .col-7, .col-two-third, .col-8, .col-three-quarter, .col-9, .col-10, .col-11, .col-full, .col-12, .col-xs-1, .col-xs-2, .col-xs-quarter, .col-xs-3, .col-xs-third, .col-xs-4, .col-xs-5, .col-xs-half, .col-xs-6, .col-xs-7, .col-xs-two-third, .col-xs-8, .col-xs-three-quarter, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-full, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-quarter,
+.siteFooter-links,
+.siteFooter-social,
+.has-info-links .siteFooter-links,
+.has-info-social .siteFooter-social,
+.has-info-links-social .siteFooter-links,
+.has-info-links-social .siteFooter-social, .col-sm-3, .col-sm-third, .col-sm-4, .col-sm-5, .col-sm-half,
+.siteFooter-info,
+.has-links-social .siteFooter-links,
+.has-links-social .siteFooter-social,
+.has-info-links-social .siteFooter-info, .col-sm-6, .col-sm-7, .col-sm-two-third, .col-sm-8, .col-sm-three-quarter,
+.has-info-links .siteFooter-info,
+.has-info-social .siteFooter-info, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-full,
+.has-info .siteFooter-info,
+.has-links .siteFooter-links,
+.has-social .siteFooter-social, .col-sm-12, .col-md-1, .col-md-2, .col-md-quarter, .col-md-3, .col-md-third,
+.profile-listing .advanced li, .col-md-4, .sidebar, .sidebarLocation-left .sidebarPosts, .sidebarLocation-right .sidebarPosts, .sidebarLocation-left
+.sidebarProfiles, .sidebarLocation-right
+.sidebarProfiles, .col-md-5, .col-md-half, .col-md-6, .profile-listing .mini li, .col-md-7, .col-md-two-third, .col-md-8, article[role=main],
+.content-area, .col-md-three-quarter, .col-md-9, .col-md-10, .col-md-11, .col-md-full,
+.sidebarLocation-bottom article[role=main],
+.single-calendar article[role=main],
+.home.blog article[role=main],
 .archive article[role=main],
 .page-template-news article[role=main],
 .single-post article[role=main],
 .page-template-profiles article[role=main],
 .single-profile article[role=main],
-.post-type-archive-profile article[role=main], .sidebarLocation-bottom .content-area, .single-calendar .content-area, .home.blog .content-area,
+.post-type-archive-profile article[role=main],
+.sidebarLocation-bottom .content-area,
+.single-calendar .content-area,
+.home.blog .content-area,
 .archive .content-area,
 .page-template-news .content-area,
 .single-post .content-area,
@@ -161,7 +172,9 @@ Template: responsive-framework
   min-height: 1px;
 }
 
-.col-xs-margin-1, .col-xs-margin-2, .col-xs-margin-quarter, .col-xs-margin-3, .col-xs-margin-third, .col-xs-margin-4, .col-xs-margin-5, .col-xs-margin-half, .col-xs-margin-6, .col-xs-margin-7, .col-xs-margin-two-third, .col-xs-margin-8, .col-xs-margin-three-quarter, .col-xs-margin-9, .col-xs-margin-10, .col-xs-margin-11, .col-xs-margin-full, .col-xs-margin-12, .col-sm-margin-1, .col-sm-margin-2, .col-sm-margin-quarter, .col-sm-margin-3, .col-sm-margin-third, .col-sm-margin-4, .col-sm-margin-5, .col-sm-margin-half, .sidebarLocation-bottom .sidebar .widget, .sidebarPosts .widget,
+.col-xs-margin-1, .col-xs-margin-2, .col-xs-margin-quarter, .col-xs-margin-3, .col-xs-margin-third, .col-xs-margin-4, .col-xs-margin-5, .col-xs-margin-half, .col-xs-margin-6, .col-xs-margin-7, .col-xs-margin-two-third, .col-xs-margin-8, .col-xs-margin-three-quarter, .col-xs-margin-9, .col-xs-margin-10, .col-xs-margin-11, .col-xs-margin-full, .col-xs-margin-12, .col-sm-margin-1, .col-sm-margin-2, .col-sm-margin-quarter, .col-sm-margin-3, .col-sm-margin-third, .col-sm-margin-4, .col-sm-margin-5, .col-sm-margin-half,
+.sidebarLocation-bottom .sidebar .widget,
+.sidebarPosts .widget,
 .sidebarProfiles .widget, .col-sm-margin-6, .col-sm-margin-7, .col-sm-margin-two-third, .col-sm-margin-8, .col-sm-margin-three-quarter, .col-sm-margin-9, .col-sm-margin-10, .col-sm-margin-11, .col-sm-margin-full, .col-sm-margin-12, .col-md-margin-1, .col-md-margin-2, .col-md-margin-quarter, .col-md-margin-3, .col-md-margin-third, .col-md-margin-4, .col-md-margin-5, .col-md-margin-half, .col-md-margin-6, .col-md-margin-7, .col-md-margin-two-third, .col-md-margin-8, .col-md-margin-three-quarter, .col-md-margin-9, .col-md-margin-10, .col-md-margin-11, .col-md-margin-full, .col-md-margin-12, .col-lg-margin-1, .col-lg-margin-2, .col-lg-margin-quarter, .col-lg-margin-3, .col-lg-margin-third, .col-lg-margin-4, .col-lg-margin-5, .col-lg-margin-half, .col-lg-margin-6, .col-lg-margin-7, .col-lg-margin-two-third, .col-lg-margin-8, .col-lg-margin-three-quarter, .col-lg-margin-9, .col-lg-margin-10, .col-lg-margin-11, .col-lg-margin-full, .col-lg-margin-12 {
   /* These classes are using %col-margin-base. */
   margin-bottom: 2.6%;
@@ -246,22 +259,18 @@ Template: responsive-framework
   width: 8.33333%;
   float: left;
 }
-
 .col-xs-push-1 {
   /* These classes are using %col-xs-push-1. */
   left: 8.33333%;
 }
-
 .col-xs-pull-1 {
   /* These classes are using %col-xs-pull-1. */
   right: 8.33333%;
 }
-
 .col-xs-offset-1 {
   /* These classes are using %col-xs-offset-1. */
   margin-left: 8.33333%;
 }
-
 .col-xs-margin-1 {
   /* These classes are using %col-xs-margin-1. */
   width: 5.73333%;
@@ -273,22 +282,18 @@ Template: responsive-framework
   width: 16.66667%;
   float: left;
 }
-
 .col-xs-push-2 {
   /* These classes are using %col-xs-push-2. */
   left: 16.66667%;
 }
-
 .col-xs-pull-2 {
   /* These classes are using %col-xs-pull-2. */
   right: 16.66667%;
 }
-
 .col-xs-offset-2 {
   /* These classes are using %col-xs-offset-2. */
   margin-left: 16.66667%;
 }
-
 .col-xs-margin-2 {
   /* These classes are using %col-xs-margin-2. */
   width: 14.06667%;
@@ -300,22 +305,18 @@ Template: responsive-framework
   width: 25%;
   float: left;
 }
-
 .col-xs-push-quarter, .col-xs-push-3 {
   /* These classes are using %col-xs-push-3. */
   left: 25%;
 }
-
 .col-xs-pull-quarter, .col-xs-pull-3 {
   /* These classes are using %col-xs-pull-3. */
   right: 25%;
 }
-
 .col-xs-offset-quarter, .col-xs-offset-3 {
   /* These classes are using %col-xs-offset-3. */
   margin-left: 25%;
 }
-
 .col-xs-margin-quarter, .col-xs-margin-3 {
   /* These classes are using %col-xs-margin-3. */
   width: 22.4%;
@@ -327,22 +328,18 @@ Template: responsive-framework
   width: 33.33333%;
   float: left;
 }
-
 .col-xs-push-third, .col-xs-push-4 {
   /* These classes are using %col-xs-push-4. */
   left: 33.33333%;
 }
-
 .col-xs-pull-third, .col-xs-pull-4 {
   /* These classes are using %col-xs-pull-4. */
   right: 33.33333%;
 }
-
 .col-xs-offset-third, .col-xs-offset-4 {
   /* These classes are using %col-xs-offset-4. */
   margin-left: 33.33333%;
 }
-
 .col-xs-margin-third, .col-xs-margin-4 {
   /* These classes are using %col-xs-margin-4. */
   width: 30.73333%;
@@ -354,22 +351,18 @@ Template: responsive-framework
   width: 41.66667%;
   float: left;
 }
-
 .col-xs-push-5 {
   /* These classes are using %col-xs-push-5. */
   left: 41.66667%;
 }
-
 .col-xs-pull-5 {
   /* These classes are using %col-xs-pull-5. */
   right: 41.66667%;
 }
-
 .col-xs-offset-5 {
   /* These classes are using %col-xs-offset-5. */
   margin-left: 41.66667%;
 }
-
 .col-xs-margin-5 {
   /* These classes are using %col-xs-margin-5. */
   width: 39.06667%;
@@ -381,22 +374,18 @@ Template: responsive-framework
   width: 50%;
   float: left;
 }
-
 .col-xs-push-half, .col-xs-push-6 {
   /* These classes are using %col-xs-push-6. */
   left: 50%;
 }
-
 .col-xs-pull-half, .col-xs-pull-6 {
   /* These classes are using %col-xs-pull-6. */
   right: 50%;
 }
-
 .col-xs-offset-half, .col-xs-offset-6 {
   /* These classes are using %col-xs-offset-6. */
   margin-left: 50%;
 }
-
 .col-xs-margin-half, .col-xs-margin-6 {
   /* These classes are using %col-xs-margin-6. */
   width: 47.4%;
@@ -408,22 +397,18 @@ Template: responsive-framework
   width: 58.33333%;
   float: left;
 }
-
 .col-xs-push-7 {
   /* These classes are using %col-xs-push-7. */
   left: 58.33333%;
 }
-
 .col-xs-pull-7 {
   /* These classes are using %col-xs-pull-7. */
   right: 58.33333%;
 }
-
 .col-xs-offset-7 {
   /* These classes are using %col-xs-offset-7. */
   margin-left: 58.33333%;
 }
-
 .col-xs-margin-7 {
   /* These classes are using %col-xs-margin-7. */
   width: 55.73333%;
@@ -435,22 +420,18 @@ Template: responsive-framework
   width: 66.66667%;
   float: left;
 }
-
 .col-xs-push-two-third, .col-xs-push-8 {
   /* These classes are using %col-xs-push-8. */
   left: 66.66667%;
 }
-
 .col-xs-pull-two-third, .col-xs-pull-8 {
   /* These classes are using %col-xs-pull-8. */
   right: 66.66667%;
 }
-
 .col-xs-offset-two-third, .col-xs-offset-8 {
   /* These classes are using %col-xs-offset-8. */
   margin-left: 66.66667%;
 }
-
 .col-xs-margin-two-third, .col-xs-margin-8 {
   /* These classes are using %col-xs-margin-8. */
   width: 64.06667%;
@@ -462,22 +443,18 @@ Template: responsive-framework
   width: 75%;
   float: left;
 }
-
 .col-xs-push-three-quarter, .col-xs-push-9 {
   /* These classes are using %col-xs-push-9. */
   left: 75%;
 }
-
 .col-xs-pull-three-quarter, .col-xs-pull-9 {
   /* These classes are using %col-xs-pull-9. */
   right: 75%;
 }
-
 .col-xs-offset-three-quarter, .col-xs-offset-9 {
   /* These classes are using %col-xs-offset-9. */
   margin-left: 75%;
 }
-
 .col-xs-margin-three-quarter, .col-xs-margin-9 {
   /* These classes are using %col-xs-margin-9. */
   width: 72.4%;
@@ -489,22 +466,18 @@ Template: responsive-framework
   width: 83.33333%;
   float: left;
 }
-
 .col-xs-push-10 {
   /* These classes are using %col-xs-push-10. */
   left: 83.33333%;
 }
-
 .col-xs-pull-10 {
   /* These classes are using %col-xs-pull-10. */
   right: 83.33333%;
 }
-
 .col-xs-offset-10 {
   /* These classes are using %col-xs-offset-10. */
   margin-left: 83.33333%;
 }
-
 .col-xs-margin-10 {
   /* These classes are using %col-xs-margin-10. */
   width: 80.73333%;
@@ -516,22 +489,18 @@ Template: responsive-framework
   width: 91.66667%;
   float: left;
 }
-
 .col-xs-push-11 {
   /* These classes are using %col-xs-push-11. */
   left: 91.66667%;
 }
-
 .col-xs-pull-11 {
   /* These classes are using %col-xs-pull-11. */
   right: 91.66667%;
 }
-
 .col-xs-offset-11 {
   /* These classes are using %col-xs-offset-11. */
   margin-left: 91.66667%;
 }
-
 .col-xs-margin-11 {
   /* These classes are using %col-xs-margin-11. */
   width: 89.06667%;
@@ -543,29 +512,27 @@ Template: responsive-framework
   width: 100%;
   float: left;
 }
-
 .col-xs-push-full, .col-xs-push-12 {
   /* These classes are using %col-xs-push-12. */
   left: 100%;
 }
-
 .col-xs-pull-full, .col-xs-pull-12 {
   /* These classes are using %col-xs-pull-12. */
   right: 100%;
 }
-
 .col-xs-offset-full, .col-xs-offset-12 {
   /* These classes are using %col-xs-offset-12. */
   margin-left: 100%;
 }
-
 .col-xs-margin-full, .col-xs-margin-12 {
   /* These classes are using %col-xs-margin-12. */
   width: 97.4%;
   float: left;
 }
 
-.col-sm-margin-1, .col-sm-margin-2, .col-sm-margin-quarter, .col-sm-margin-3, .col-sm-margin-third, .col-sm-margin-4, .col-sm-margin-5, .col-sm-margin-half, .sidebarLocation-bottom .sidebar .widget, .sidebarPosts .widget,
+.col-sm-margin-1, .col-sm-margin-2, .col-sm-margin-quarter, .col-sm-margin-3, .col-sm-margin-third, .col-sm-margin-4, .col-sm-margin-5, .col-sm-margin-half,
+.sidebarLocation-bottom .sidebar .widget,
+.sidebarPosts .widget,
 .sidebarProfiles .widget, .col-sm-margin-6, .col-sm-margin-7, .col-sm-margin-two-third, .col-sm-margin-8, .col-sm-margin-three-quarter, .col-sm-margin-9, .col-sm-margin-10, .col-sm-margin-11, .col-sm-margin-full, .col-sm-margin-12 {
   margin-left: 2.6%;
 }
@@ -582,22 +549,18 @@ Template: responsive-framework
   width: 8.33333%;
   float: left;
 }
-
 .col-sm-push-1 {
   /* These classes are using %col-sm-push-1. */
   left: 8.33333%;
 }
-
 .col-sm-pull-1 {
   /* These classes are using %col-sm-pull-1. */
   right: 8.33333%;
 }
-
 .col-sm-offset-1 {
   /* These classes are using %col-sm-offset-1. */
   margin-left: 8.33333%;
 }
-
 .col-sm-margin-1 {
   /* These classes are using %col-sm-margin-1. */
   width: 5.73333%;
@@ -609,51 +572,47 @@ Template: responsive-framework
   width: 16.66667%;
   float: left;
 }
-
 .col-sm-push-2 {
   /* These classes are using %col-sm-push-2. */
   left: 16.66667%;
 }
-
 .col-sm-pull-2 {
   /* These classes are using %col-sm-pull-2. */
   right: 16.66667%;
 }
-
 .col-sm-offset-2 {
   /* These classes are using %col-sm-offset-2. */
   margin-left: 16.66667%;
 }
-
 .col-sm-margin-2 {
   /* These classes are using %col-sm-margin-2. */
   width: 14.06667%;
   float: left;
 }
 
-.col-sm-quarter, .siteFooter-links,
-.siteFooter-social, .has-info-links .siteFooter-links, .has-info-social .siteFooter-social, .has-info-links-social .siteFooter-links,
+.col-sm-quarter,
+.siteFooter-links,
+.siteFooter-social,
+.has-info-links .siteFooter-links,
+.has-info-social .siteFooter-social,
+.has-info-links-social .siteFooter-links,
 .has-info-links-social .siteFooter-social, .col-sm-3 {
   /* These classes are using %col-sm-3. */
   width: 25%;
   float: left;
 }
-
 .col-sm-push-quarter, .col-sm-push-3 {
   /* These classes are using %col-sm-push-3. */
   left: 25%;
 }
-
 .col-sm-pull-quarter, .col-sm-pull-3 {
   /* These classes are using %col-sm-pull-3. */
   right: 25%;
 }
-
 .col-sm-offset-quarter, .col-sm-offset-3 {
   /* These classes are using %col-sm-offset-3. */
   margin-left: 25%;
 }
-
 .col-sm-margin-quarter, .col-sm-margin-3 {
   /* These classes are using %col-sm-margin-3. */
   width: 22.4%;
@@ -665,22 +624,18 @@ Template: responsive-framework
   width: 33.33333%;
   float: left;
 }
-
 .col-sm-push-third, .col-sm-push-4 {
   /* These classes are using %col-sm-push-4. */
   left: 33.33333%;
 }
-
 .col-sm-pull-third, .col-sm-pull-4 {
   /* These classes are using %col-sm-pull-4. */
   right: 33.33333%;
 }
-
 .col-sm-offset-third, .col-sm-offset-4 {
   /* These classes are using %col-sm-offset-4. */
   margin-left: 33.33333%;
 }
-
 .col-sm-margin-third, .col-sm-margin-4 {
   /* These classes are using %col-sm-margin-4. */
   width: 30.73333%;
@@ -692,51 +647,48 @@ Template: responsive-framework
   width: 41.66667%;
   float: left;
 }
-
 .col-sm-push-5 {
   /* These classes are using %col-sm-push-5. */
   left: 41.66667%;
 }
-
 .col-sm-pull-5 {
   /* These classes are using %col-sm-pull-5. */
   right: 41.66667%;
 }
-
 .col-sm-offset-5 {
   /* These classes are using %col-sm-offset-5. */
   margin-left: 41.66667%;
 }
-
 .col-sm-margin-5 {
   /* These classes are using %col-sm-margin-5. */
   width: 39.06667%;
   float: left;
 }
 
-.col-sm-half, .siteFooter-info, .has-links-social .siteFooter-links,
-.has-links-social .siteFooter-social, .has-info-links-social .siteFooter-info, .col-sm-6 {
+.col-sm-half,
+.siteFooter-info,
+.has-links-social .siteFooter-links,
+.has-links-social .siteFooter-social,
+.has-info-links-social .siteFooter-info, .col-sm-6 {
   /* These classes are using %col-sm-6. */
   width: 50%;
   float: left;
 }
-
 .col-sm-push-half, .col-sm-push-6 {
   /* These classes are using %col-sm-push-6. */
   left: 50%;
 }
-
 .col-sm-pull-half, .col-sm-pull-6 {
   /* These classes are using %col-sm-pull-6. */
   right: 50%;
 }
-
 .col-sm-offset-half, .col-sm-offset-6 {
   /* These classes are using %col-sm-offset-6. */
   margin-left: 50%;
 }
-
-.col-sm-margin-half, .sidebarLocation-bottom .sidebar .widget, .sidebarPosts .widget,
+.col-sm-margin-half,
+.sidebarLocation-bottom .sidebar .widget,
+.sidebarPosts .widget,
 .sidebarProfiles .widget, .col-sm-margin-6 {
   /* These classes are using %col-sm-margin-6. */
   width: 47.4%;
@@ -748,22 +700,18 @@ Template: responsive-framework
   width: 58.33333%;
   float: left;
 }
-
 .col-sm-push-7 {
   /* These classes are using %col-sm-push-7. */
   left: 58.33333%;
 }
-
 .col-sm-pull-7 {
   /* These classes are using %col-sm-pull-7. */
   right: 58.33333%;
 }
-
 .col-sm-offset-7 {
   /* These classes are using %col-sm-offset-7. */
   margin-left: 58.33333%;
 }
-
 .col-sm-margin-7 {
   /* These classes are using %col-sm-margin-7. */
   width: 55.73333%;
@@ -775,49 +723,43 @@ Template: responsive-framework
   width: 66.66667%;
   float: left;
 }
-
 .col-sm-push-two-third, .col-sm-push-8 {
   /* These classes are using %col-sm-push-8. */
   left: 66.66667%;
 }
-
 .col-sm-pull-two-third, .col-sm-pull-8 {
   /* These classes are using %col-sm-pull-8. */
   right: 66.66667%;
 }
-
 .col-sm-offset-two-third, .col-sm-offset-8 {
   /* These classes are using %col-sm-offset-8. */
   margin-left: 66.66667%;
 }
-
 .col-sm-margin-two-third, .col-sm-margin-8 {
   /* These classes are using %col-sm-margin-8. */
   width: 64.06667%;
   float: left;
 }
 
-.col-sm-three-quarter, .has-info-links .siteFooter-info, .has-info-social .siteFooter-info, .col-sm-9 {
+.col-sm-three-quarter,
+.has-info-links .siteFooter-info,
+.has-info-social .siteFooter-info, .col-sm-9 {
   /* These classes are using %col-sm-9. */
   width: 75%;
   float: left;
 }
-
 .col-sm-push-three-quarter, .col-sm-push-9 {
   /* These classes are using %col-sm-push-9. */
   left: 75%;
 }
-
 .col-sm-pull-three-quarter, .col-sm-pull-9 {
   /* These classes are using %col-sm-pull-9. */
   right: 75%;
 }
-
 .col-sm-offset-three-quarter, .col-sm-offset-9 {
   /* These classes are using %col-sm-offset-9. */
   margin-left: 75%;
 }
-
 .col-sm-margin-three-quarter, .col-sm-margin-9 {
   /* These classes are using %col-sm-margin-9. */
   width: 72.4%;
@@ -829,22 +771,18 @@ Template: responsive-framework
   width: 83.33333%;
   float: left;
 }
-
 .col-sm-push-10 {
   /* These classes are using %col-sm-push-10. */
   left: 83.33333%;
 }
-
 .col-sm-pull-10 {
   /* These classes are using %col-sm-pull-10. */
   right: 83.33333%;
 }
-
 .col-sm-offset-10 {
   /* These classes are using %col-sm-offset-10. */
   margin-left: 83.33333%;
 }
-
 .col-sm-margin-10 {
   /* These classes are using %col-sm-margin-10. */
   width: 80.73333%;
@@ -856,49 +794,44 @@ Template: responsive-framework
   width: 91.66667%;
   float: left;
 }
-
 .col-sm-push-11 {
   /* These classes are using %col-sm-push-11. */
   left: 91.66667%;
 }
-
 .col-sm-pull-11 {
   /* These classes are using %col-sm-pull-11. */
   right: 91.66667%;
 }
-
 .col-sm-offset-11 {
   /* These classes are using %col-sm-offset-11. */
   margin-left: 91.66667%;
 }
-
 .col-sm-margin-11 {
   /* These classes are using %col-sm-margin-11. */
   width: 89.06667%;
   float: left;
 }
 
-.col-sm-full, .has-info .siteFooter-info, .has-links .siteFooter-links, .has-social .siteFooter-social, .col-sm-12 {
+.col-sm-full,
+.has-info .siteFooter-info,
+.has-links .siteFooter-links,
+.has-social .siteFooter-social, .col-sm-12 {
   /* These classes are using %col-sm-12. */
   width: 100%;
   float: left;
 }
-
 .col-sm-push-full, .col-sm-push-12 {
   /* These classes are using %col-sm-push-12. */
   left: 100%;
 }
-
 .col-sm-pull-full, .col-sm-pull-12 {
   /* These classes are using %col-sm-pull-12. */
   right: 100%;
 }
-
 .col-sm-offset-full, .col-sm-offset-12 {
   /* These classes are using %col-sm-offset-12. */
   margin-left: 100%;
 }
-
 .col-sm-margin-full, .col-sm-margin-12 {
   /* These classes are using %col-sm-margin-12. */
   width: 97.4%;
@@ -918,22 +851,18 @@ Template: responsive-framework
   width: 8.33333%;
   float: left;
 }
-
 .col-md-push-1 {
   /* These classes are using %col-md-push-1. */
   left: 8.33333%;
 }
-
 .col-md-pull-1 {
   /* These classes are using %col-md-pull-1. */
   right: 8.33333%;
 }
-
 .col-md-offset-1 {
   /* These classes are using %col-md-offset-1. */
   margin-left: 8.33333%;
 }
-
 .col-md-margin-1 {
   /* These classes are using %col-md-margin-1. */
   width: 5.73333%;
@@ -945,22 +874,18 @@ Template: responsive-framework
   width: 16.66667%;
   float: left;
 }
-
 .col-md-push-2 {
   /* These classes are using %col-md-push-2. */
   left: 16.66667%;
 }
-
 .col-md-pull-2 {
   /* These classes are using %col-md-pull-2. */
   right: 16.66667%;
 }
-
 .col-md-offset-2 {
   /* These classes are using %col-md-offset-2. */
   margin-left: 16.66667%;
 }
-
 .col-md-margin-2 {
   /* These classes are using %col-md-margin-2. */
   width: 14.06667%;
@@ -972,51 +897,45 @@ Template: responsive-framework
   width: 25%;
   float: left;
 }
-
 .col-md-push-quarter, .col-md-push-3 {
   /* These classes are using %col-md-push-3. */
   left: 25%;
 }
-
 .col-md-pull-quarter, .col-md-pull-3 {
   /* These classes are using %col-md-pull-3. */
   right: 25%;
 }
-
 .col-md-offset-quarter, .col-md-offset-3 {
   /* These classes are using %col-md-offset-3. */
   margin-left: 25%;
 }
-
 .col-md-margin-quarter, .col-md-margin-3 {
   /* These classes are using %col-md-margin-3. */
   width: 22.4%;
   float: left;
 }
 
-.col-md-third, .profile-listing .advanced li, .col-md-4, .sidebar, .sidebarLocation-left .sidebarPosts,
-.sidebarLocation-right .sidebarPosts, .sidebarLocation-left .sidebarProfiles,
-.sidebarLocation-right .sidebarProfiles {
+.col-md-third,
+.profile-listing .advanced li, .col-md-4, .sidebar, .sidebarLocation-left .sidebarPosts, .sidebarLocation-right .sidebarPosts, .sidebarLocation-left
+.sidebarProfiles, .sidebarLocation-right
+.sidebarProfiles {
   /* These classes are using %col-md-4. */
   width: 33.33333%;
   float: left;
 }
-
-.col-md-push-third, .col-md-push-4, .sidebarLocation-left article[role=main], .sidebarLocation-left .content-area {
+.col-md-push-third, .col-md-push-4, .sidebarLocation-left article[role=main], .sidebarLocation-left
+.content-area {
   /* These classes are using %col-md-push-4. */
   left: 33.33333%;
 }
-
 .col-md-pull-third, .col-md-pull-4 {
   /* These classes are using %col-md-pull-4. */
   right: 33.33333%;
 }
-
 .col-md-offset-third, .col-md-offset-4 {
   /* These classes are using %col-md-offset-4. */
   margin-left: 33.33333%;
 }
-
 .col-md-margin-third, .col-md-margin-4 {
   /* These classes are using %col-md-margin-4. */
   width: 30.73333%;
@@ -1028,22 +947,18 @@ Template: responsive-framework
   width: 41.66667%;
   float: left;
 }
-
 .col-md-push-5 {
   /* These classes are using %col-md-push-5. */
   left: 41.66667%;
 }
-
 .col-md-pull-5 {
   /* These classes are using %col-md-pull-5. */
   right: 41.66667%;
 }
-
 .col-md-offset-5 {
   /* These classes are using %col-md-offset-5. */
   margin-left: 41.66667%;
 }
-
 .col-md-margin-5 {
   /* These classes are using %col-md-margin-5. */
   width: 39.06667%;
@@ -1055,22 +970,18 @@ Template: responsive-framework
   width: 50%;
   float: left;
 }
-
 .col-md-push-half, .col-md-push-6 {
   /* These classes are using %col-md-push-6. */
   left: 50%;
 }
-
 .col-md-pull-half, .col-md-pull-6 {
   /* These classes are using %col-md-pull-6. */
   right: 50%;
 }
-
 .col-md-offset-half, .col-md-offset-6 {
   /* These classes are using %col-md-offset-6. */
   margin-left: 50%;
 }
-
 .col-md-margin-half, .col-md-margin-6 {
   /* These classes are using %col-md-margin-6. */
   width: 47.4%;
@@ -1082,22 +993,18 @@ Template: responsive-framework
   width: 58.33333%;
   float: left;
 }
-
 .col-md-push-7 {
   /* These classes are using %col-md-push-7. */
   left: 58.33333%;
 }
-
 .col-md-pull-7 {
   /* These classes are using %col-md-pull-7. */
   right: 58.33333%;
 }
-
 .col-md-offset-7 {
   /* These classes are using %col-md-offset-7. */
   margin-left: 58.33333%;
 }
-
 .col-md-margin-7 {
   /* These classes are using %col-md-margin-7. */
   width: 55.73333%;
@@ -1110,22 +1017,18 @@ Template: responsive-framework
   width: 66.66667%;
   float: left;
 }
-
 .col-md-push-two-third, .col-md-push-8 {
   /* These classes are using %col-md-push-8. */
   left: 66.66667%;
 }
-
 .col-md-pull-two-third, .col-md-pull-8, .sidebarLocation-left .sidebar, .sidebarLocation-left .sidebarPosts, .sidebarLocation-left .sidebarProfiles {
   /* These classes are using %col-md-pull-8. */
   right: 66.66667%;
 }
-
 .col-md-offset-two-third, .col-md-offset-8 {
   /* These classes are using %col-md-offset-8. */
   margin-left: 66.66667%;
 }
-
 .col-md-margin-two-third, .col-md-margin-8 {
   /* These classes are using %col-md-margin-8. */
   width: 64.06667%;
@@ -1137,22 +1040,18 @@ Template: responsive-framework
   width: 75%;
   float: left;
 }
-
 .col-md-push-three-quarter, .col-md-push-9 {
   /* These classes are using %col-md-push-9. */
   left: 75%;
 }
-
 .col-md-pull-three-quarter, .col-md-pull-9 {
   /* These classes are using %col-md-pull-9. */
   right: 75%;
 }
-
 .col-md-offset-three-quarter, .col-md-offset-9 {
   /* These classes are using %col-md-offset-9. */
   margin-left: 75%;
 }
-
 .col-md-margin-three-quarter, .col-md-margin-9 {
   /* These classes are using %col-md-margin-9. */
   width: 72.4%;
@@ -1164,22 +1063,18 @@ Template: responsive-framework
   width: 83.33333%;
   float: left;
 }
-
 .col-md-push-10 {
   /* These classes are using %col-md-push-10. */
   left: 83.33333%;
 }
-
 .col-md-pull-10 {
   /* These classes are using %col-md-pull-10. */
   right: 83.33333%;
 }
-
 .col-md-offset-10 {
   /* These classes are using %col-md-offset-10. */
   margin-left: 83.33333%;
 }
-
 .col-md-margin-10 {
   /* These classes are using %col-md-margin-10. */
   width: 80.73333%;
@@ -1191,35 +1086,37 @@ Template: responsive-framework
   width: 91.66667%;
   float: left;
 }
-
 .col-md-push-11 {
   /* These classes are using %col-md-push-11. */
   left: 91.66667%;
 }
-
 .col-md-pull-11 {
   /* These classes are using %col-md-pull-11. */
   right: 91.66667%;
 }
-
 .col-md-offset-11 {
   /* These classes are using %col-md-offset-11. */
   margin-left: 91.66667%;
 }
-
 .col-md-margin-11 {
   /* These classes are using %col-md-margin-11. */
   width: 89.06667%;
   float: left;
 }
 
-.col-md-full, .sidebarLocation-bottom article[role=main], .single-calendar article[role=main], .home.blog article[role=main],
+.col-md-full,
+.sidebarLocation-bottom article[role=main],
+.single-calendar article[role=main],
+.home.blog article[role=main],
 .archive article[role=main],
 .page-template-news article[role=main],
 .single-post article[role=main],
 .page-template-profiles article[role=main],
 .single-profile article[role=main],
-.post-type-archive-profile article[role=main], .sidebarLocation-bottom .content-area, .single-calendar .content-area, .home.blog .content-area,
+.post-type-archive-profile article[role=main],
+.sidebarLocation-bottom .content-area,
+.single-calendar .content-area,
+.home.blog .content-area,
 .archive .content-area,
 .page-template-news .content-area,
 .single-post .content-area,
@@ -1230,22 +1127,18 @@ Template: responsive-framework
   width: 100%;
   float: left;
 }
-
 .col-md-push-full, .col-md-push-12 {
   /* These classes are using %col-md-push-12. */
   left: 100%;
 }
-
 .col-md-pull-full, .col-md-pull-12 {
   /* These classes are using %col-md-pull-12. */
   right: 100%;
 }
-
 .col-md-offset-full, .col-md-offset-12 {
   /* These classes are using %col-md-offset-12. */
   margin-left: 100%;
 }
-
 .col-md-margin-full, .col-md-margin-12 {
   /* These classes are using %col-md-margin-12. */
   width: 97.4%;
@@ -1265,22 +1158,18 @@ Template: responsive-framework
   width: 8.33333%;
   float: left;
 }
-
 .col-lg-push-1 {
   /* These classes are using %col-lg-push-1. */
   left: 8.33333%;
 }
-
 .col-lg-pull-1 {
   /* These classes are using %col-lg-pull-1. */
   right: 8.33333%;
 }
-
 .col-lg-offset-1 {
   /* These classes are using %col-lg-offset-1. */
   margin-left: 8.33333%;
 }
-
 .col-lg-margin-1 {
   /* These classes are using %col-lg-margin-1. */
   width: 5.73333%;
@@ -1292,22 +1181,18 @@ Template: responsive-framework
   width: 16.66667%;
   float: left;
 }
-
 .col-lg-push-2 {
   /* These classes are using %col-lg-push-2. */
   left: 16.66667%;
 }
-
 .col-lg-pull-2 {
   /* These classes are using %col-lg-pull-2. */
   right: 16.66667%;
 }
-
 .col-lg-offset-2 {
   /* These classes are using %col-lg-offset-2. */
   margin-left: 16.66667%;
 }
-
 .col-lg-margin-2 {
   /* These classes are using %col-lg-margin-2. */
   width: 14.06667%;
@@ -1319,22 +1204,18 @@ Template: responsive-framework
   width: 25%;
   float: left;
 }
-
 .col-lg-push-quarter, .col-lg-push-3 {
   /* These classes are using %col-lg-push-3. */
   left: 25%;
 }
-
 .col-lg-pull-quarter, .col-lg-pull-3 {
   /* These classes are using %col-lg-pull-3. */
   right: 25%;
 }
-
 .col-lg-offset-quarter, .col-lg-offset-3 {
   /* These classes are using %col-lg-offset-3. */
   margin-left: 25%;
 }
-
 .col-lg-margin-quarter, .col-lg-margin-3 {
   /* These classes are using %col-lg-margin-3. */
   width: 22.4%;
@@ -1346,22 +1227,18 @@ Template: responsive-framework
   width: 33.33333%;
   float: left;
 }
-
 .col-lg-push-third, .col-lg-push-4 {
   /* These classes are using %col-lg-push-4. */
   left: 33.33333%;
 }
-
 .col-lg-pull-third, .col-lg-pull-4 {
   /* These classes are using %col-lg-pull-4. */
   right: 33.33333%;
 }
-
 .col-lg-offset-third, .col-lg-offset-4 {
   /* These classes are using %col-lg-offset-4. */
   margin-left: 33.33333%;
 }
-
 .col-lg-margin-third, .col-lg-margin-4 {
   /* These classes are using %col-lg-margin-4. */
   width: 30.73333%;
@@ -1373,22 +1250,18 @@ Template: responsive-framework
   width: 41.66667%;
   float: left;
 }
-
 .col-lg-push-5 {
   /* These classes are using %col-lg-push-5. */
   left: 41.66667%;
 }
-
 .col-lg-pull-5 {
   /* These classes are using %col-lg-pull-5. */
   right: 41.66667%;
 }
-
 .col-lg-offset-5 {
   /* These classes are using %col-lg-offset-5. */
   margin-left: 41.66667%;
 }
-
 .col-lg-margin-5 {
   /* These classes are using %col-lg-margin-5. */
   width: 39.06667%;
@@ -1400,22 +1273,18 @@ Template: responsive-framework
   width: 50%;
   float: left;
 }
-
 .col-lg-push-half, .col-lg-push-6 {
   /* These classes are using %col-lg-push-6. */
   left: 50%;
 }
-
 .col-lg-pull-half, .col-lg-pull-6 {
   /* These classes are using %col-lg-pull-6. */
   right: 50%;
 }
-
 .col-lg-offset-half, .col-lg-offset-6 {
   /* These classes are using %col-lg-offset-6. */
   margin-left: 50%;
 }
-
 .col-lg-margin-half, .col-lg-margin-6 {
   /* These classes are using %col-lg-margin-6. */
   width: 47.4%;
@@ -1427,22 +1296,18 @@ Template: responsive-framework
   width: 58.33333%;
   float: left;
 }
-
 .col-lg-push-7 {
   /* These classes are using %col-lg-push-7. */
   left: 58.33333%;
 }
-
 .col-lg-pull-7 {
   /* These classes are using %col-lg-pull-7. */
   right: 58.33333%;
 }
-
 .col-lg-offset-7 {
   /* These classes are using %col-lg-offset-7. */
   margin-left: 58.33333%;
 }
-
 .col-lg-margin-7 {
   /* These classes are using %col-lg-margin-7. */
   width: 55.73333%;
@@ -1454,22 +1319,18 @@ Template: responsive-framework
   width: 66.66667%;
   float: left;
 }
-
 .col-lg-push-two-third, .col-lg-push-8 {
   /* These classes are using %col-lg-push-8. */
   left: 66.66667%;
 }
-
 .col-lg-pull-two-third, .col-lg-pull-8 {
   /* These classes are using %col-lg-pull-8. */
   right: 66.66667%;
 }
-
 .col-lg-offset-two-third, .col-lg-offset-8 {
   /* These classes are using %col-lg-offset-8. */
   margin-left: 66.66667%;
 }
-
 .col-lg-margin-two-third, .col-lg-margin-8 {
   /* These classes are using %col-lg-margin-8. */
   width: 64.06667%;
@@ -1481,22 +1342,18 @@ Template: responsive-framework
   width: 75%;
   float: left;
 }
-
 .col-lg-push-three-quarter, .col-lg-push-9 {
   /* These classes are using %col-lg-push-9. */
   left: 75%;
 }
-
 .col-lg-pull-three-quarter, .col-lg-pull-9 {
   /* These classes are using %col-lg-pull-9. */
   right: 75%;
 }
-
 .col-lg-offset-three-quarter, .col-lg-offset-9 {
   /* These classes are using %col-lg-offset-9. */
   margin-left: 75%;
 }
-
 .col-lg-margin-three-quarter, .col-lg-margin-9 {
   /* These classes are using %col-lg-margin-9. */
   width: 72.4%;
@@ -1508,22 +1365,18 @@ Template: responsive-framework
   width: 83.33333%;
   float: left;
 }
-
 .col-lg-push-10 {
   /* These classes are using %col-lg-push-10. */
   left: 83.33333%;
 }
-
 .col-lg-pull-10 {
   /* These classes are using %col-lg-pull-10. */
   right: 83.33333%;
 }
-
 .col-lg-offset-10 {
   /* These classes are using %col-lg-offset-10. */
   margin-left: 83.33333%;
 }
-
 .col-lg-margin-10 {
   /* These classes are using %col-lg-margin-10. */
   width: 80.73333%;
@@ -1535,22 +1388,18 @@ Template: responsive-framework
   width: 91.66667%;
   float: left;
 }
-
 .col-lg-push-11 {
   /* These classes are using %col-lg-push-11. */
   left: 91.66667%;
 }
-
 .col-lg-pull-11 {
   /* These classes are using %col-lg-pull-11. */
   right: 91.66667%;
 }
-
 .col-lg-offset-11 {
   /* These classes are using %col-lg-offset-11. */
   margin-left: 91.66667%;
 }
-
 .col-lg-margin-11 {
   /* These classes are using %col-lg-margin-11. */
   width: 89.06667%;
@@ -1562,22 +1411,18 @@ Template: responsive-framework
   width: 100%;
   float: left;
 }
-
 .col-lg-push-full, .col-lg-push-12 {
   /* These classes are using %col-lg-push-12. */
   left: 100%;
 }
-
 .col-lg-pull-full, .col-lg-pull-12 {
   /* These classes are using %col-lg-pull-12. */
   right: 100%;
 }
-
 .col-lg-offset-full, .col-lg-offset-12 {
   /* These classes are using %col-lg-offset-12. */
   margin-left: 100%;
 }
-
 .col-lg-margin-full, .col-lg-margin-12 {
   /* These classes are using %col-lg-margin-12. */
   width: 97.4%;
@@ -2092,7 +1937,6 @@ input[type="submit"], .button, .button-primary,
   text-align: center;
   text-decoration: none;
 }
-
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -2114,7 +1958,6 @@ input[type="submit"]:hover, .button:hover, .button-primary:hover,
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='transparent', EndColorStr='rgba(0, 0, 0, 0.1)');
 }
-
 button:active,
 html input[type="button"]:active,
 input[type="reset"]:active,
@@ -2149,14 +1992,12 @@ input[type="submit"] {
   /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
   /* Firefox: Get rid of the inner focus border */
 }
-
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
   outline: 0;
 }
-
 button:-moz-focus-inner,
 html input[type="button"]:-moz-focus-inner,
 input[type="reset"]:-moz-focus-inner,
@@ -2164,7 +2005,6 @@ input[type="submit"]:-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-
 button[disabled],
 html input[disabled][type="button"],
 input[disabled][type="reset"],
@@ -2180,14 +2020,12 @@ input[disabled][type="submit"] {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-
 .button-primary,
 .button-selected, #quicksearch .button, .paging-navigation a, .archiveLink {
   /* These classes are using %button-styles-primary. */
   background-color: #0078e7;
   color: #ffffff;
 }
-
 .button-primary:hover,
 .button-selected:hover, #quicksearch .button:hover, .paging-navigation a:hover, .archiveLink:hover, .button-primary:active,
 .button-selected:active, #quicksearch .button:active, .paging-navigation a:active, .archiveLink:active, .button-primary:visited,
@@ -2569,7 +2407,7 @@ select[multiple] {
 /* buttons
 ----------------------------------------------------------------- */
 body {
-  background: #000000;
+  background: #ffffff;
 }
 
 .content {
@@ -2625,7 +2463,6 @@ article[role=main],
   padding-bottom: 10px;
   padding-bottom: 35px;
 }
-
 .page-template-no-sidebars article[role=main], .page-template-no-sidebars
 .content-area {
   left: 0;
@@ -2643,14 +2480,13 @@ article[role=main],
 
 /* sidebar
 ----------------------------------------------------------------- */
-.sidebar, .sidebarLocation-left .sidebarPosts,
-.sidebarLocation-right .sidebarPosts, .sidebarLocation-left .sidebarProfiles,
-.sidebarLocation-right .sidebarProfiles {
+.sidebar, .sidebarLocation-left .sidebarPosts, .sidebarLocation-right .sidebarPosts, .sidebarLocation-left
+.sidebarProfiles, .sidebarLocation-right
+.sidebarProfiles {
   font-size: 16px;
   clear: none;
   padding-left: 3.46667%;
 }
-
 .sidebarLocation-left .sidebar, .sidebarLocation-left .sidebarPosts, .sidebarLocation-left .sidebarProfiles {
   padding: 0;
   padding-right: 3.46667%;
@@ -2686,7 +2522,6 @@ article[role=main],
   margin-top: 0;
   padding: 0;
 }
-
 .footbar-container .widget:first-child, .footbar-container .widget:nth-child(3n+1) {
   margin-left: 0;
   clear: left;
@@ -2723,7 +2558,6 @@ article[role=main],
 .siteFooter a {
   color: #888888;
 }
-
 .siteFooter a:hover {
   color: #ffffff;
 }
@@ -2732,7 +2566,6 @@ article[role=main],
   margin: 0 0 5px;
   line-height: 1.4;
 }
-
 .siteFooter li:last-child {
   margin: 0;
 }
@@ -2761,7 +2594,6 @@ article[role=main],
   padding: 0;
   margin-right: 20px;
 }
-
 .has-links .siteFooter-links li:last-child, .has-social .siteFooter-social li:last-child, .has-links-social .siteFooter-links li:last-child,
 .has-links-social .siteFooter-social li:last-child, .has-info-links .siteFooter-links li:last-child, .has-info-social .siteFooter-social li:last-child, .has-info-links-social .siteFooter-social li:last-child {
   margin-right: 0;
@@ -2855,13 +2687,11 @@ article[role=main],
 .lt-ie9 .brand {
   display: table;
 }
-
 .lt-ie9 .brand > * {
   top: auto;
   display: table-cell;
   vertical-align: middle;
 }
-
 .brand > * {
   position: relative;
   top: 50%;
@@ -2880,7 +2710,6 @@ article[role=main],
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .lt-ie9 .brand-container, .lt-ie9 .brand-site-description {
   top: auto;
 }
@@ -2893,11 +2722,9 @@ article[role=main],
   font-size: 18px;
   line-height: 1.3;
 }
-
 .brand > .has-parent {
   font-size: 16px;
 }
-
 .brand > .brand-unbranded {
   font-size: inherit;
 }
@@ -2909,7 +2736,6 @@ article[role=main],
   color: #000000;
   text-decoration: none;
 }
-
 .brand-container:visited {
   color: #000000;
 }
@@ -2932,14 +2758,12 @@ article[role=main],
   min-height: 35px;
   background: url("https://www.bu.edu/cdn/images/logos/subbrand49x35.png") no-repeat 0 49%;
 }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-signature {
     background-image: url("https://www.bu.edu/cdn/images/logos/subbrand49x35-retina.png");
     background-size: 49px 35px;
   }
 }
-
 .brand-signature.has-parent {
   padding-top: 0;
   padding-bottom: 0;
@@ -2950,7 +2774,6 @@ article[role=main],
 .brand-part-sitename {
   display: block;
 }
-
 .brand-part-logotype + .brand-part-sitename {
   display: inline;
 }
@@ -2960,7 +2783,6 @@ article[role=main],
   font-size: 20px;
   color: #cc0000;
 }
-
 .brand-unbranded:visited {
   color: #cc0000;
 }
@@ -2980,7 +2802,6 @@ article[role=main],
   height: 50px;
   background: url("https://www.bu.edu/cdn/images/logos/masterplate112x50.png") no-repeat 0 0;
 }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-masterplate {
     background-image: url("https://www.bu.edu/cdn/images/logos/masterplate112x50-retina.png");
@@ -2995,7 +2816,6 @@ article[role=main],
   width: 96px;
   height: 40px;
 }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-bumclogo {
     background-image: url("https://www.bu.edu/cdn/images/logos/bumclogo96x40-retina.png");
@@ -3010,7 +2830,6 @@ article[role=main],
   font-weight: normal;
   font-style: normal;
 }
-
 .siteFooter-social a[href*="dropbox.com"] i:before, .siteFooter-social a[href*="facebook.com"] i:before, .siteFooter-social a[href*="flickr.com"] i:before, .siteFooter-social a[href*="foursquare.com"] i:before, .siteFooter-social a[href*="github.com"] i:before, .siteFooter-social a[href*="plus.google.com"] i:before, .siteFooter-social a[href*="instagram.com"] i:before, .siteFooter-social a[href*="kickstarter.com"] i:before, .siteFooter-social a[href*="linkedin.com"] i:before, .siteFooter-social a[href*="pinterest.com"] i:before, .siteFooter-social a[href*="getpocket.com"] i:before, .siteFooter-social a[href*="reddit.com"] i:before, .siteFooter-social a[href*="twitter.com"] i:before, .siteFooter-social a[href*="tumblr.com"] i:before, .siteFooter-social a[href*="vimeo.com"] i:before, .siteFooter-social a[href*="vine.co"] i:before, .siteFooter-social a[href*="youtube.com"] i:before, .searchToggle.is-open:before, .searchToggle:before, .siteFooter-social i {
   /* These classes are using %icon. */
   display: inline-block;
@@ -3032,7 +2851,6 @@ article[role=main],
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-
 .siteFooter-social a[href*="dropbox.com"] i:before span, .siteFooter-social a[href*="facebook.com"] i:before span, .siteFooter-social a[href*="flickr.com"] i:before span, .siteFooter-social a[href*="foursquare.com"] i:before span, .siteFooter-social a[href*="github.com"] i:before span, .siteFooter-social a[href*="plus.google.com"] i:before span, .siteFooter-social a[href*="instagram.com"] i:before span, .siteFooter-social a[href*="kickstarter.com"] i:before span, .siteFooter-social a[href*="linkedin.com"] i:before span, .siteFooter-social a[href*="pinterest.com"] i:before span, .siteFooter-social a[href*="getpocket.com"] i:before span, .siteFooter-social a[href*="reddit.com"] i:before span, .siteFooter-social a[href*="twitter.com"] i:before span, .siteFooter-social a[href*="tumblr.com"] i:before span, .siteFooter-social a[href*="vimeo.com"] i:before span, .siteFooter-social a[href*="vine.co"] i:before span, .siteFooter-social a[href*="youtube.com"] i:before span, .searchToggle.is-open:before span, .searchToggle:before span, .siteFooter-social i span {
   display: none;
 }
@@ -3257,11 +3075,9 @@ nav a {
   color: #ffffff;
   text-align: center;
 }
-
 .searchToggle:visited {
   color: #ffffff;
 }
-
 .searchToggle:hover {
   color: #aaaaaa;
 }
@@ -3392,7 +3208,6 @@ nav a {
   border: none;
   line-height: 60px;
 }
-
 .primaryNav-menu a:hover, .primaryNav-menu a:focus {
   color: #aaaaaa;
 }
@@ -3427,7 +3242,6 @@ nav a {
   line-height: 1.6;
   color: #ffffff;
 }
-
 .primaryNav-menu li li a:hover, .primaryNav-menu li li a:focus {
   color: #aaaaaa;
 }
@@ -3463,7 +3277,6 @@ nav a {
   color: #7a7a7a;
   text-decoration: none;
 }
-
 .utilityNav a:hover {
   color: #000000;
 }
@@ -3471,7 +3284,6 @@ nav a {
 .primaryNav .utilityNav a {
   color: #aaaaaa;
 }
-
 .primaryNav .utilityNav a:hover {
   color: #ffffff;
 }
@@ -3550,17 +3362,14 @@ nav a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .lt-ie9 .l-sideNav .brand .searchToggle, .lt-ie9
 .l-noNav .brand .searchToggle {
   top: auto;
 }
-
 .l-sideNav .brand .searchToggle:visited,
 .l-noNav .brand .searchToggle:visited {
   color: #9f9f9f;
 }
-
 .l-sideNav .brand .searchToggle:hover,
 .l-noNav .brand .searchToggle:hover {
   color: #000000;
@@ -3653,7 +3462,6 @@ nav a {
 .backLink, .archiveLink {
   /* These classes are using %backlink-styles. */
 }
-
 .backLink:before, .archiveLink:before {
   content: "← ";
   color: #ffffff;
@@ -3682,8 +3490,10 @@ nav a {
   padding-bottom: 56.25%;
   margin-bottom: 14px;
 }
-
-.responsiveVideo div, .responsiveVideo embed, .responsiveVideo object, .responsiveVideo iframe {
+.responsiveVideo div,
+.responsiveVideo embed,
+.responsiveVideo object,
+.responsiveVideo iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -3722,11 +3532,9 @@ h6.bu_collapsible {
   margin-bottom: 10px;
   max-width: 50%;
 }
-
 .alignright p, .alignleft p {
   margin-bottom: 0;
 }
-
 .alignright img, .alignleft img {
   margin-bottom: 5px;
 }
@@ -3781,20 +3589,17 @@ h6.bu_collapsible {
   margin: 35px 0;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-
 .responsive-table table {
   border: 1px solid #dddddd;
 }
-
-.responsive-table table td, .responsive-table table th {
+.responsive-table table td,
+.responsive-table table th {
   border: 1px solid #dddddd;
 }
-
 .responsive-table table {
   margin: 0;
   table-layout: auto;
 }
-
 .responsive-table table td {
   border: 1px solid #dddddd;
   white-space: nowrap;
@@ -3803,17 +3608,14 @@ h6.bu_collapsible {
 .table-bordered {
   border: 0;
 }
-
 .table-bordered th:first-child,
 .table-bordered td:first-child {
   border-left: 0;
 }
-
 .table-bordered th:last-child,
 .table-bordered td:last-child {
   border-right: 0;
 }
-
 .table-bordered tbody tr:last-child th,
 .table-bordered tbody tr:last-child td,
 .table-bordered tfoot tr:last-child th,
@@ -3977,7 +3779,6 @@ h6.bu_collapsible {
 .widget a {
   color: #0f69d7;
 }
-
 .widget a:hover, .widget a:focus {
   color: #0f69d7;
 }
@@ -3985,7 +3786,6 @@ h6.bu_collapsible {
 .footbar a {
   color: #0f69d7;
 }
-
 .footbar a:hover, .footbar a:focus {
   color: #0f69d7;
 }
@@ -4004,7 +3804,6 @@ h6.bu_collapsible {
   color: #000000;
   text-decoration: none;
 }
-
 .widgetTitle a:after {
   content: " →";
   color: #aaaaaa;
@@ -4035,7 +3834,6 @@ h6.bu_collapsible {
 .widget-bu-posts .post {
   margin-bottom: 25px;
 }
-
 .widget-bu-posts .post:last-child {
   margin-bottom: 0;
 }
@@ -4075,42 +3873,35 @@ h6.bu_collapsible {
 .widget_nav_menu h3 {
   margin-bottom: 0;
 }
-
 .widget_bu_pages ul,
 .widget_nav_menu ul {
   border: 1px solid #dddddd;
   border-width: 0 0 1px 0;
 }
-
 .widget_bu_pages ul ul,
 .widget_nav_menu ul ul {
   margin: 0;
   border: none;
 }
-
 .widget_bu_pages li,
 .widget_nav_menu li {
   border: 1px solid #dddddd;
   border-width: 1px 0 0 0;
   font-family: "Benton", Helvetica, sans-serif;
 }
-
 .widget_bu_pages li:first-child,
 .widget_nav_menu li:first-child {
   border: none;
 }
-
 .widget_bu_pages li li,
 .widget_nav_menu li li {
   padding: 0 0 0 20px;
   border: none;
 }
-
 .widget_bu_pages li li a,
 .widget_nav_menu li li a {
   font-size: 16px;
 }
-
 .widget_bu_pages li a,
 .widget_nav_menu li a {
   display: block;
@@ -4118,7 +3909,6 @@ h6.bu_collapsible {
   font-size: 16px;
   color: #0f69d7;
 }
-
 .widget_bu_pages li a:hover, .widget_bu_pages li a:focus,
 .widget_nav_menu li a:hover,
 .widget_nav_menu li a:focus {
@@ -4139,7 +3929,6 @@ h6.bu_collapsible {
   left: 0;
   width: 48px;
 }
-
 .widget-bu-calendar .default a, .widget-bu-calendar .graphic a {
   position: relative;
   display: block;
@@ -4152,44 +3941,36 @@ h6.bu_collapsible {
   /* calendar: full-date */
   /* calendar: graphic */
 }
-
 .widget-bu-calendar .date {
   display: block;
   font-family: "Benton", Helvetica, sans-serif;
   color: #000000;
   font-weight: 700;
 }
-
 .widget-bu-calendar li {
   padding: 10px 0;
   border: 1px solid #dddddd;
   border-width: 1px 0 0 0;
 }
-
 .widget-bu-calendar li:first-child {
   padding: 0 0 10px;
   border: none;
 }
-
 .widget-bu-calendar .full-date .date {
   font-size: 12px;
 }
-
 .widget-bu-calendar .graphic a {
   min-height: 48px;
 }
-
 .widget-bu-calendar .graphic .date {
   text-align: center;
   line-height: 1.3;
 }
-
 .widget-bu-calendar .graphic .day {
   display: block;
   font-size: 21px;
   color: #000000;
 }
-
 .widget-bu-calendar .graphic .month {
   font-size: 12px;
   color: #000000;
@@ -4218,7 +3999,6 @@ h6.bu_collapsible {
 .post-type-archive-profile {
   /* These classes are using %templateNarrow. */
 }
-
 .sidebarLocation-bottom .content-container, .single-calendar .content-container, .home.blog .content-container,
 .archive .content-container,
 .page-template-news .content-container,
@@ -4244,7 +4024,6 @@ h6.bu_collapsible {
 .post-type-archive-profile.sidebarLocation-right .content-container {
   max-width: 1170px;
 }
-
 .home.blog.sidebarLocation-left article[role=main], .home.blog.sidebarLocation-right article[role=main],
 .archive.sidebarLocation-left article[role=main],
 .archive.sidebarLocation-right article[role=main],
@@ -4257,7 +4036,9 @@ h6.bu_collapsible {
 .single-profile.sidebarLocation-left article[role=main],
 .single-profile.sidebarLocation-right article[role=main],
 .post-type-archive-profile.sidebarLocation-left article[role=main],
-.post-type-archive-profile.sidebarLocation-right article[role=main], .home.blog.sidebarLocation-left .content-area, .home.blog.sidebarLocation-right .content-area,
+.post-type-archive-profile.sidebarLocation-right article[role=main],
+.home.blog.sidebarLocation-left .content-area,
+.home.blog.sidebarLocation-right .content-area,
 .archive.sidebarLocation-left .content-area,
 .archive.sidebarLocation-right .content-area,
 .page-template-news.sidebarLocation-left .content-area,
@@ -4288,22 +4069,20 @@ h6.bu_collapsible {
   clear: both;
   margin-bottom: 40px;
 }
-
 .sidebarPosts .widget,
 .sidebarProfiles .widget {
   padding: 0;
 }
 
-.sidebarLocation-left .sidebarPosts,
-.sidebarLocation-right .sidebarPosts, .sidebarLocation-left .sidebarProfiles,
-.sidebarLocation-right .sidebarProfiles {
+.sidebarLocation-left .sidebarPosts, .sidebarLocation-right .sidebarPosts, .sidebarLocation-left
+.sidebarProfiles, .sidebarLocation-right
+.sidebarProfiles {
   float: left;
   clear: none;
 }
-
-.sidebarLocation-left .sidebarPosts .widget,
-.sidebarLocation-right .sidebarPosts .widget, .sidebarLocation-left .sidebarProfiles .widget,
-.sidebarLocation-right .sidebarProfiles .widget {
+.sidebarLocation-left .sidebarPosts .widget, .sidebarLocation-right .sidebarPosts .widget, .sidebarLocation-left
+.sidebarProfiles .widget, .sidebarLocation-right
+.sidebarProfiles .widget {
   width: 100%;
   margin-left: 0;
   margin-bottom: 40px;
@@ -4391,7 +4170,6 @@ h6.bu_collapsible {
   border: 1px solid #dddddd;
   border-width: 1px 0 0 0;
 }
-
 .home.blog .content-container article:first-child {
   border: none;
 }
@@ -4464,7 +4242,6 @@ h6.bu_collapsible {
 .event-list .event-link a {
   color: #0f69d7;
 }
-
 .event-list .event-link a:hover, .event-list .event-link a:focus {
   color: #0f69d7;
 }
@@ -4497,7 +4274,6 @@ h6.bu_collapsible {
 .monthCalendar td a {
   color: #0f69d7;
 }
-
 .monthCalendar td a:hover, .monthCalendar td a::focus {
   color: #0f69d7;
 }
@@ -4550,7 +4326,6 @@ h6.bu_collapsible {
   margin-top: 10px;
   list-style: none;
 }
-
 .dateSummary li:first-child {
   margin-top: 0;
 }
@@ -4588,11 +4363,9 @@ h6.bu_collapsible {
   max-width: 500px;
   font-size: 16.5px;
 }
-
 .error-404 #quicksearch fieldset {
   padding: 0;
 }
-
 .error-404 #quicksearch select {
   display: none;
 }
@@ -4645,7 +4418,6 @@ h6.bu_collapsible {
     display: block !important;
   }
 }
-
 /* Profiles
 ----------------------------------------------------------------- */
 .profile-listing ul {
@@ -4759,7 +4531,6 @@ h6.bu_collapsible {
   text-decoration: underline;
   word-wrap: break-word;
 }
-
 .profile-listing .mini .email a:hover, .profile-listing .mini .email a:focus {
   text-decoration: none;
 }
@@ -4844,12 +4615,10 @@ h6.bu_collapsible {
 .gallery {
   margin-right: -10px;
 }
-
 .gallery a {
   display: block;
   margin-right: 10px;
 }
-
 .gallery img {
   width: 100%;
 }
@@ -4859,7 +4628,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 100%;
 }
-
 .gallery-columns-1 .gallery-item:nth-child(2) {
   clear: left;
 }
@@ -4869,7 +4637,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 50%;
 }
-
 .gallery-columns-2 .gallery-item:nth-child(3) {
   clear: left;
 }
@@ -4879,7 +4646,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 33.33333%;
 }
-
 .gallery-columns-3 .gallery-item:nth-child(4) {
   clear: left;
 }
@@ -4889,7 +4655,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 25%;
 }
-
 .gallery-columns-4 .gallery-item:nth-child(5) {
   clear: left;
 }
@@ -4899,7 +4664,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 20%;
 }
-
 .gallery-columns-5 .gallery-item:nth-child(6) {
   clear: left;
 }
@@ -4909,7 +4673,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 16.66667%;
 }
-
 .gallery-columns-6 .gallery-item:nth-child(7) {
   clear: left;
 }
@@ -4919,7 +4682,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 14.28571%;
 }
-
 .gallery-columns-7 .gallery-item:nth-child(8) {
   clear: left;
 }
@@ -4929,7 +4691,6 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 12.5%;
 }
-
 .gallery-columns-8 .gallery-item:nth-child(9) {
   clear: left;
 }
@@ -4939,9 +4700,55 @@ h6.bu_collapsible {
   width: 33.33%;
   width: 11.11111%;
 }
-
 .gallery-columns-9 .gallery-item:nth-child(10) {
   clear: left;
+}
+
+.card {
+  background: #eee;
+  margin: 20px 0;
+}
+.card .content {
+  padding: 15px 15px 5px 15px;
+  background: #eee;
+}
+
+@media only screen and (max-width: 768px) {
+  .card .content h2, .card .content h3 {
+    font-size: 21px;
+  }
+}
+.full-width-cta {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  padding: 70px;
+  text-align: center;
+}
+
+.full-width-cta::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url("images/landscape.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.full-width-cta h2,
+.full-width-cta .button-primary {
+  position: relative;
+  z-index: 2;
+}
+
+.full-width-cta h2 {
+  color: #fff;
 }
 
 /*# sourceMappingURL=ie.css.map */
