@@ -15,7 +15,7 @@
  * It represents the version of this child theme and is used to version theme
  * assets (style.css, production.js, etc.) when loaded.
  */
-define( 'RESPONSIVE_CHILD_THEME_VERSION', '1.0.0' );
+define( 'RESPONSIVE_CHILD_THEME_VERSION', '0.0.1' );
 
 /**
  * Specifies the responsive layout for the theme. Disables the option in the
