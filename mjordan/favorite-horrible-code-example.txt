@@ -1,0 +1,17 @@
+The code was written a year earlier but you've been asked to restyle this header differently. What are some ways we can drastically improve the following css delaration.
+
+<div class="card">
+  <h2 class="unique-title">Unique title header</h2>
+</div>
+
+.card > h2 {
+	border-bottom: 1px solid #ccc;
+	font-size: 26px;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+}
+
+.kill-border {
+	border-bottom: 0px;
+	padding-bottom: 0px;
+}
