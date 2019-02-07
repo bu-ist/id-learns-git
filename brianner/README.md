@@ -1,4 +1,4 @@
-#Merge Conflict Workshop
+# Merge Conflict Workshop
 
 ## What is Git?
 
