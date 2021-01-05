@@ -1,6 +1,0 @@
-{
-	"name": "r-acacase",
-	"dependencies": {
-		"responsive-foundation": "git@github.com:bu-ist/responsive-foundation.git#master"
-	}
-}
